@@ -1,0 +1,84 @@
+.rap {
+width: 400px;
+height: 500px;
+border: 5px solid red;
+}
+.one, .two {
+	width: 400px;
+	height: 250px;
+}
+.one {
+	background: yellow;
+}
+.two {
+	background: blue;
+}
+
+.wrap {
+width: 400px;
+height: 500px;
+border: 5px solid red;
+}
+.bone, .btwo {
+	width: 400px;
+	height: 250px;
+	padding: 10px;
+	margin: 10px;
+}
+.bone {
+	background: yellow;
+}
+.btwo {
+	background: blue;
+}
+.wap {
+width: 500px;
+height: 500px;
+border: 5px solid red;
+}
+.b1, .b2 {
+	width: 400px;
+	height: 160px;
+	padding: 10px 15px;
+	margin: 10px 7px 7px 15px;
+}
+.b1 {
+	background: yellow;
+}
+.b2 {
+	background: blue;
+}
+.swap {
+	width: 400px;
+	height: 440px;
+	border: 10px solid blue;
+
+}
+.box1, .box2 {
+	width:400px;
+	height: 220px;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 5px solid red;
+}
+.box1 {
+}
+.box2 {
+	background: cyan;
+}
+.bo1 {
+width: 200px;
+height: 220px;
+background: skyblue;
+top: 100px;
+left: 100px;
+position: absolute;
+}
+.bo2 {
+width: 250px;
+height: 220px;
+background: green;
+position: fixed;
+top: 150px;
+left: 150px;
+}

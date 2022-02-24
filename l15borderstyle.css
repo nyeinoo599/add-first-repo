@@ -1,0 +1,73 @@
+.borderstyle {
+	border-style: solid;
+
+}
+.borderstyle2 {
+	border-style: double;
+}
+.borderstyle3 {
+	border-style: dotted;
+}
+.borderstyle4 {
+	border-style: dashed;
+}
+.borderstyle5 {
+	border-style: inset;
+}
+.borderstyle6 {
+	border-style: outset;
+}
+.borderdesign {
+	width: 400px;
+	height: 400px;
+	color: pink;
+	animation-name: example;
+	animation-duration: 4s;
+	/*background: pink;*/
+	background-color: blue;
+	/*border-radius: 100%;*/
+	/*border-radius: 50%;*/
+	/*border-radius: 3OOpx;*/
+	border-radius: 70px 30px 50px 100px;
+	/*look like clockwise*/
+	border: 3px solid yellow;
+	/*stoke style color*/
+}
+li {
+	/*list-style-type: circle;*/
+	/*list-style-type: square;*/
+	/*list-style-type: none; equal to list-style: none*/
+	/*list-style-type: decimal;*/
+	list-style-type: decimal-leading-zero;
+	border: 3px solid yellow;
+	list-style-position: inside;
+	/*list-style-position: outside  is default;*/
+
+}
+/*Attribute selector*/
+input [type="text"] {
+	border-radius: 20px;
+	color: blue;
+	width: 150px;
+}
+input [type="text-area"] {
+	border-radius: 20px;
+	color: blue;
+	width: 150px;                                                              
+}
+/*array = []
+function = name()*/
+body {
+	background-image: url(../images/fav/eng.jpg) ;
+	background-repeat: no-repeat;
+	/*background-position: center;*/
+	/*background-position: right;*/
+	/*background-position: top;*/
+	/*background-position: bottom;*/
+	/*background-position: right top;*/
+	/*background-position: left top;*/
+	/*background-position: right bottom;*/
+	background-position: left bottom;
+	/*background-attachment: scroll;*/
+	background-attachment: fixed;
+}

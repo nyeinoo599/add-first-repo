@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Elements</title>
+	
+</head>
+<body>
+	<h3 align="center">Form Elements</h3>
+	<fieldset>
+		<legend>This is sample form &copy;&dollar;&clubs; &clubsuit;&clubs; &clubsuit;&clubs; &clubsuit;&clubs;</legend>
+	<form action="" method="" enctype="multipart/form-data">  
+	<!-- enctype is used for divided into binary code to connect server drive d-->
+	<!-- action and method are for backend -->
+		<label for="firstname">First Name</label>
+		<input type="text" name="firstname" id="firstname" class="" autocomplete="off" autofocus="" value="Kyaw Mg" />
+		<!--stand alone attribute is attribute with has no value-->
+		<!--autofocus and checked are stand alone attribute-->
+		<!-- name is for backend, id is javascript and class is css
+			id must be unit-->
+
+		<br/><br/>
+
+		<label for="lastname">Last Name</label>
+		<input type="text" name="lastname" id="lastname" class="" autocomplete="off" placeholder="Enter your lastname" minlength="4" maxlength="6" />
+		<br/><br/>
+		<label for="age">Age</label>
+		<input type="number" name="age" id="age" class="" placeholder="Enter u r age" min="5" max="99" />
+
+
+		<br/><br/>
+
+
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" class="" autocomplete="off" placeholder="Enter your email" required= />
+		<br/><br/>
+
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password" class="" placeholder="Enter your password" required/>
+		<!-- no need autocompltete for password-->
+		<br/><br/>
+
+		<label>Gender</label>
+		<input type="radio" name="gender" id="gendemr" class="" value="M" /><label for="gendemr">Male</label>
+		<input type="radio" name="gender" id="genderf" class="" value="F" /><label for="gendemf">Female</label>
+		<input type="radio" name="gender" id="gendero" class="" value="O" /><label for="gendemo">Other</label>
+		<br/> <br/>
+		<!-- value is not use for user keyboard-->
+
+			<label>Fruit</label>
+		<input type="radio" name="Fruit" id="gendeap" class="" value="A" /><label for="gendeap">Apple</label>
+		<input type="radio" name="Fruit" id="gendeor" class="" value="O" /><label for="gendeor">Orange</label>
+		<input type="radio" name="Fruit" id="gendepi" class="" value="Pineapple" /><label for="gendepi">Pineapple</label>
+		<br/> <br/>
+
+		<!-- ABOUT CHECKBOX-->
+
+			<label>Choose your favourite color</label>
+		<input type="checkbox" name="color" id="colorr" class="" value="Red" checked /><label for="colorr">Red</label>
+		<input type="checkbox" name="color" id="colorbk" class="" value="Black" /><label for="colorbk">Black</label>
+		<input type="checkbox" name="color" id="colorbe" class="" value="Blue" /><label for="colorbe">Blue</label>
+		<input type="checkbox" name="color" id="colorg" class="" value="Grey" checked /><label for="colorg">Grey</label>
+		<br/> <br/>
+
+		<!-- DROP DROWN-->
+
+		<label for="country">Citizen</label>
+		<select name="country" id="country">
+			
+			<option value="mya">Indonesia</option>
+			<option value="ind" selected>Myanmar</option>
+			<option value="3">India</option>
+			<option value="4">Philipines</option>
+			
+		</select>
+		<br/>
+		<br/>
+		<label for="role">Role</label>
+		<select name="role" id="role" multiple >
+			
+			<option value="">Manager</option>
+			<option value="" selected>Editor</option>
+			<option value="">Supervisor</option>
+			<option value="">Sales</option>
+			
+		</select>
+		
+		<br/>
+		<label for="dob">DOB</label>
+		<input type="time" name="dob" id="dob"class="">
+		<br/>
+		<br/>
+		<label for="booking time">Booking Time</label>
+		<input type="time" name="booking time" id="booking time" class="">
+		<br/>
+		<br/>
+		<label for="apt">Appoint</label>
+		<input type="datetime-local" name="apt" id="apt" value="">
+		<br/>
+		<br/>
+		<label for="volume">Volume</label>
+		<input type="range" name="volume" id="volume" class=""value="0" min="0" max="100" step="
+		20">
+		<br/> <br/>
+		<label for="bio">Bio</label>
+		<textarea name="bio" id="bio" rows="10" placeholder="Write Somethint..."></textarea>
+		<br/>
+		<br/>
+		<label for="nrc">NRC</label>
+		<input type="file" name="nrc" id="nrc" class="" />
+		<br/>
+		<br/>
+		<label for="nrc1">NRC1</label>
+		<input type="file" name="nrc1" id="nrc1" class="" capture="user" accept="image/*" />
+
+		<!--to open with camera and use only photo (in saturation that is it is took) immediately  (for only phone)    -->
+		<br/>
+
+	 <br/>
+		<br/>
+		<label for="vr">View Record</label>
+		<input type="file" name="vr" id="vr" class=""  capture="enviroment" accept="video/*" multiple />
+		<br/> 
+
+		<img src="path/name.format /">
+
+		<input type="hidden" name="test" id="test" class="" value="" />
+		<br/>
+		<input type="reset" name="reset" id="reset" class="" value="Cancel" />
+		<input type="submit" name="submit" id="submit" class="" value="Register" />
+		<!-- submit is use to send datat into database-->
+		<button type="submit" name="login" id="login">Login</button>
+
+
+
+	</form>
+</fieldset>
+
+
+</body>
+</html>
+
+
+
+29FT

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Translate 3D</title>
+	<style type="text/css">
+		
+		body{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.container{
+			perspective: 700px;
+
+			perspective-origin: center;  //default
+			perspective-origin: top;
+			/*perspective-origin: bottom;*/
+			perspective-origin: left;
+			perspective-origin: right;
+
+			perspective-origin: left top;
+			perspective-origin: left bottom;
+			perspective-origin: right top;
+			perspective-origin: right bottom;
+
+			perspective-origin: 0 bottom;
+			perspective-origin: 50% bottom;
+			perspective-origin: 100% bottom;
+			perspective-origin: 0 top;
+			perspective-origin: 50% top;
+			perspective-origin: 100% top;
+		}
+		img{
+			width: 200px;
+			transition: transform 2s;
+
+		}
+
+		img:hover{
+			transform: translateZ(300px);  //view is in fornt of 
+			transform: translateZ(200px);
+			transform: translateZ(400px);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<img src="./img/Hydrangeas.jpg" alt="Hydrangeas">
+	</div>
+
+</body>
+</html>

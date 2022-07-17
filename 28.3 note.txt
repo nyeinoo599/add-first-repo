@@ -1,0 +1,15 @@
+28.3.2022
+
+..display:block;   <!changing inline to blck or reverse>
+...differences between padding and margin
+        padding work inside<a thar po u tar>
+        margin work outside<bae ko toom htoke tar>
+
+position absolute is (chan a pyin ko hwate chin par pae)
+position relative ic (absolute ko chan pate pae tar par)
+
+opacity0 is remove only elements not spacing
+display is remove not only elements but also spacing
+
+
+onclick work with 

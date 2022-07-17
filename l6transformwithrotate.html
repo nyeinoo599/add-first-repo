@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Transform with Rotate</title>
+</head>
+<style type="text/css">
+	.continer{
+		width: 1000px;
+		background: gray;
+	}
+	.continer .move{
+		width: 150px;
+		height: 60px;
+		background: red;
+		color: #fff;
+		font-size: 20px;
+		margin: 20px 0;
+
+		text-align: center;
+		line-height: 60px;
+	}
+	#rotate:hover{
+		/*rotate(angle)*/
+		/*transform: rotate(45deg);
+		transform: rotate(-45deg);*/
+		transform: rotate(40deg);
+	}
+		#rotatex:hover{
+		/*rotateX(angle)*/
+		/*transform: rotate(45deg);
+		transform: rotate(-45deg);*/
+		transform: rotateX(40deg);
+	}
+		#rotatey:hover{
+		/*rotateY(angle)*/
+		/*transform: rotate(45deg);
+		transform: rotate(-45deg);*/
+		transform: rotateY(40deg);
+	}
+	img{
+		width: 300px;
+
+		display: block;
+		margin: auto;
+
+		transition: transform 2s;
+	}
+	img:hover{
+		transform: rotate(45deg);
+		transform: rotate(90deg);
+		transform: rotate(180deg);
+		transform: rotate(360deg);
+
+		/*1turn = 360deg*/
+		transform: rotate(45deg);
+		transform: rotate(1turn);
+		transform: rotate(0.5turn);
+		
+		transform: rotateX(45deg);
+
+		transform: rotateY(45deg);
+	}
+</style>
+<body>
+	<div class="continer">
+		<div id="rotate" class="move">Rotate
+		</div>
+	</div>
+
+	<div class="continer">
+		<div id="rotatex" class="move">RotateX
+		</div>
+	</div>
+
+
+	<div class="continer">
+		<div id="rotatey" class="move">RotateY
+		</div>
+	</div>
+	<hr/>
+
+	<img src="img/Hydrangeas.jpg" alt="img">
+
+
+</body>
+</html>
+<!-- 
+rotate(xy)
+rotateX()
+rotateY()
+ -->
+
+ 8RT

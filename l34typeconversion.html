@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		
+
+		val = 123.456789;
+		console.log(val);
+		console.log(val.toFixed(2));
+
+		val = "50.897"
+		val = parseInt(val);  //result is 50
+
+		 console.log(val);
+		 console.log(typeof val);
+		 console.log(val.toFixed(2));
+
+		 val = "50.897"
+		 val = parseInt(val);
+
+		 console.log(val);
+		 console.log(typeof val);
+
+		  val = "50.897"
+		 val = parseFloat(val);
+
+		 console.log(val);
+		 console.log(typeof val);
+
+
+		 //Boolean to Number
+
+		 val = Number(false);
+		 console.log(val);
+		 console.log(typeof val);
+
+		 val = Number(true);
+		 console.log(val);
+		 console.log(typeof val);
+
+
+
+		 //String to Array
+
+		 val = "aung tun tun";
+		 val = Array.from(val);
+		 console.log(val);
+		 console.log(typeof val);
+		 console.log(val.length);
+		 console.log(Array.isArray(val));
+
+		 //can't convert to array
+
+		 val = 2;
+		 val = Array.from(val);
+
+		 val = true;
+		 val = Array.from(val);
+
+		 val = {
+		 	music : 'rock',
+		 	sport : 'football'
+		 };
+		 val = Array.from(val);
+		 console.log(val);
+		 console.log(typeof val);
+
+
+
+
+
+	</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+

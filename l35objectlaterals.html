@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<title>Object Laterals (JS Object)</title>
+<head>
+	
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+
+		let student = {
+			firstname: 'Kyaw',
+			middlename: 'Zin',
+			lastname: 'Nyein'
+		};
+
+		console.log(student);
+		console.table(student);
+
+		console.log(student.firstname);
+		console.log( typeof student.firstname);
+
+		console.log(student.middlename);
+		console.log(typeof student.middlename);
+
+		console.log(student.lastname);
+		console.log(typeof student.lastname);
+
+		const person = {
+			firstname: 'Kyaw',
+			middlename: 'Zin',
+			lastname: 'Phyo',
+			age: 34,
+			email: 'kzphyo@gmail.com',
+			address:{
+				street: '60st',
+				city: 'Monywa'
+			}, 
+			country:{
+				capital: "Yangon"
+			}
+		};
+
+		console.log(person);
+		console.log(person.firstname);
+		console.log(person.lastname);
+		console.log(person.age);
+		console.log(person.email);
+		console.log(person.address.city);
+		console.log(person.country.capital);
+
+		var obj = {
+			fullname: 'Kyaw Nyein',
+			age: 55,
+			phone: '09778508761',
+			address:{
+				street: 'Thapaypintawyast',
+				city: 'Monywa'
+			},
+			hobbies:["sleep","eat","code","music","sport"]
+		};
+
+		console.log(obj);
+		console.log(obj.fullname);
+		console.log(obj.phone);
+		console.log(obj.address.street);
+		console.log(obj.hobbies[2]);
+		console.log(obj.hobbies);
+
+
+
+
+	</script>
+
+
+
+	
+
+</body>
+
+</html>

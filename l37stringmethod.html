@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>String Method</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		// string Method
+		let firstname = "Maung Maung ";
+		let lastname = "Kyaw";
+		console.log(firstname);
+		console.log(lastname);
+		console.log(firstname.length);
+
+
+		  //concat (string +)
+
+		   let fullname = firstname + lastname;
+		   console.log(fullname);
+
+		   //Append
+
+		    firstname += lastname;
+		    console.log(firstname);
+
+		    //concat
+
+		   var fstname = "Zayar ";
+		   var lstname = "Kyaw";
+		   var fname = fstname.concat(lstname);       //concat() is either method or function
+
+		   console.log(fname);
+
+		   //Character Array
+		   console.log(fname.length);
+		   console.log(fname[fname.length-1]);
+
+
+		   //charAt()
+		   console.log(fname.charAt(2));
+
+		   console.log(fname.charAt(fname.length-1));
+		   console.log(fname.charAt(fname.length-3));
+
+		   //includes()
+
+		   let fav = "My fav color is black color";
+
+		   console.log(fav);
+		   console.log(fav.includes("black")); //result is true
+		   console.log(fav.includes("red"));  //result is false
+		   console.log(fav.includes("Black"))  //result is false
+		   console.log(fav.includes("BLACK"))  //result is false
+		   console.log(fav.includes("bla"))  //result is true
+
+
+
+		   //replace("old","new")
+		   console.log(fav);
+		   console.log(fav.replace("black","blue"));  // result is my fav color is blue color
+		   console.log(fav.replace("bla","red"));    //result is my fav color is redck color
+		   console.log(fav.replace("color","parpar"));   //result is my fav parpar is black color
+
+
+		   //substring(index,length)  
+		   console.log(fav.substring(0,10)+"...");     //result is my fav col...
+		   console.log(fav.substring(1,10));           //result is y fav col
+		   console.log(fav.substring(0,10).concat('...')); //result is my fav col...
+
+		   //Change Case
+		   console.log(fav.toUpperCase());
+		   console.log(fav.toLowerCase());
+
+		   //Style
+
+
+
+
+
+	</script>
+</body>
+</html>
+<!-- string method star with main string -->
+<!-- woall crack is study after php -->

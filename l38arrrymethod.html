@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array Method</title>
+</head>
+<body>
+	<script type="text/javascript">
+		 //Array Method
+
+		 let arrcolors = ["red","black","orange","tomato","violet"];
+		 console.log(arrcolors);
+		 console.log(arrcolors.length);
+		 console.log(arrcolors[3]);
+		 console.log(arrcolors.indexOf("violet"));
+
+		 //Character Array in JS 
+
+		 let myfriend = "Aung Kyaw Kyaw";
+		 console.log(Array.isArray(arrcolors)); 
+		 console.log(Array.isArray(myfriend));
+
+		 console.log(arrcolors);
+		 console.log("Array to String by to String = " + arrcolors.toString());
+		 console.log("Array to String by join = " + arrcolors.join("*"));
+
+		 const n = ["red","black","green","silver"];
+		 console.log(n);
+
+		 n[4] = "blue";
+		 n[1] = "pink";
+
+		 console.log(n);
+		 //Add new array (add on the end)
+		 n.push("gold");
+		 n.push("orange");
+		 n.push("viole","white");
+		 console.log(n);
+
+		 //add new arry both index and vlaue (add on the front)
+		 n.unshift("tomato");
+		 n.unshift("skyblue","grey")
+		 console.log(n);
+
+		 //remove array both index and value  (remove on the front)
+		 n.shift();
+		 console.log(n);
+		 n.shift();
+		 console.log(n);
+
+		 //remove array (remove on the end)
+		 n.pop();
+		 n.pop();
+
+		 //remove only value
+		 delete n[2];
+		 console.log(n.length);
+
+		 console.log(n);
+		 console.log(n[2]);
+
+		 //splice (index,length(space))
+		 let q = n.splice(1,5);
+		 console.log(q);
+		 console.log(q.length);
+
+		 //Array combine
+
+		  const arr1 = ["ki ki","ko ko","ka ka"];
+		  const arr2 = ["su su","si si","saw saw"];
+		  const arr3 = [100,200,300];
+
+		  console.log(arr1.concat(arr2));
+		  console.log(arr2.concat(arr1));
+		  console.log(arr1.concat(arr3));
+		  console.log(arr1+arr2);  //not array is string
+
+		  //Array Sorting;
+
+		  const arr4 = arr1.concat(arr2);
+		  console.log(arr4);
+		  console.log(arr4[3]); 
+
+		  //Sort A to Z (sort () doesn't work in number)
+		  console.log(arr4.sort());
+		  console.log(arr4[3]);
+
+
+		  //Sort Z to A 
+		  console.log(arr4.reverse());
+
+		  const arr5 = [100,200,5,10,20,40];
+		  console.log(arr5);
+		  // console.log(arr5.sort());    not working
+
+
+		  console.log(arr5.sort(function(x,y){
+		  	return x-y;
+		  	// return y-x;
+		  }));
+
+
+
+	</script>
+
+</body>
+</html>

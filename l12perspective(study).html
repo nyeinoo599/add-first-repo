@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Perspective</title>
+	<style type="text/css">
+
+		body{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.container{
+			width: 600px;
+			background: pink;
+		}
+		.div1{
+			width: 300px;
+			height: 100px;
+			background: blue;
+			padding: 20px;
+
+			position: relative;
+			perspective: 600px;
+		}
+		.div2{
+			width: 250px;
+			height: 120px;
+
+			background: green;
+			position: absolute;
+
+			padding: 50px;
+			transform: rotateX(45deg);
+
+			top: -100%;
+			left: -8px;
+			z-index: 1;
+		}
+		.div3{
+			width: 50px;
+			height: 120px;
+			background: black;
+
+			position: absolute;
+			left: 150px;
+			bottom: 0;
+			transform-origin: left;
+
+			transition: transform .5s;
+		}
+		.div4{
+			width: 50px;
+			height: 120px;
+
+			background: violet;
+
+			position: absolute;
+			left: 200px;
+			bottom: 0;
+			transition: transform .5s;
+			transform-origin: right;
+			transform: rotateY(45deg);
+
+		}
+		.div3:hover{
+			transform:  rotateY(-45deg);
+		}
+
+		.div4:hover{
+			transform: rotateY(-2deg);
+
+		}
+		
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="div1">DIV 1
+			<div class="div2">DIV 2</div>
+			<div class="div3">DIV 3</div>
+			<div class="div4">DIV 4</div>
+		</div>
+	</div>
+
+</body>
+</html>

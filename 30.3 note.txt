@@ -1,0 +1,10 @@
+lineargradient ka vertical a loke loke tae
+
+transform: scale(0); equal to opacity:0  (elements 0 spacing 1)
+display:none;  (elements 0 spacing 0 )
+
+% ka last element place mar shi tae
+viewport ka myin ya tae screen yae place ko u tae
+
+scroll ma swe chin yin ( margin:0  and overflow: hidden )thone
+overflow:hidden ka one page mar  pae thone ya tae news page tae mar thone ma ya bu

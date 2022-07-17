@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Transition</title>
+	<style>
+
+		.div1{
+			width: 290px;
+			height: 90px;
+			background: blue;
+			color: #fff;
+
+			text-align: center;
+			line-height: 90px;
+
+			transition-property: background;
+			/*transition-duration: 2000ms;*/
+			transition-duration: 2s;
+		}
+		.div1:hover{
+			background: green;
+		}
+
+		.div2{
+			width: 290px;
+			height: 90px;
+			background: blue;
+			color: #fff;
+
+			text-align: center;
+			line-height: 90px;
+
+			/*transition-property: width;*/
+			/*transition-property: width,background;*/
+			/*transition-property: width,background,color;*/
+			/*transition-property: all;*/
+			/*transition-duration: 2s;*/
+
+			/*short hand*/
+			/*transition: width 1s;*/
+			/*transition: width 1s,background 2s;*/
+			/*transition: width 1s,background 2s, color 3s;*/
+			transition: all 1s;
+
+
+		}
+		.div2:hover{
+			width: 500px;
+			background: green;
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">CSS Transition Div 1
+		
+	</div>
+	<hr/>
+
+	<div class="div2">Css Transition Div 2
+		
+	</div>
+
+</body>
+</html>

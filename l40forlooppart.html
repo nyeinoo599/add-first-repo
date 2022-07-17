@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Looping</title>
+</head>
+<body>
+	<h2>Need to learn Promise pgno.311</h2>
+<script type="text/javascript">
+
+// String.prototype.greet = function() {
+// 	return "Hello, My Friends";
+// };
+
+// let str = "Some String";
+// console.log(str.greet());
+
+	// Standard String Object
+
+// String.prototype.greet = function() {
+// 	return "Kyaw Zin Nyein";
+// 	};
+// 	let arr = "ko ko";
+// console.log(arr.greet());
+
+
+	//Crating Objecd
+
+	let cat = {
+		color: "Yellow",
+		name: "Shwe War",
+	}
+	console.log(cat);
+	console.log(cat.name);
+	console.log(cat["color"]);
+
+	// let user={
+	// 	name: "kyaw nyein",
+	// 	hello() {
+	// 		return `My name is ${this.name}`
+	// 	}
+	// }
+	// console.log(user.hello());
+
+// let name="Kyaw Nyein";
+// let age=20;
+// let user={name,age};
+
+// console.log(user);
+
+// let personbio = [
+// { name: "Kyaw Nyein", age: 20, gender:"Male"},
+// { name: "Nyein Nyein", age: 22, gender:"Female"},
+// { name: "Mg Nyein", age: 22, gender:"Male"},
+// { name: "Ma Nyein", age: 22, gender:"Female"},
+// ]
+
+// console.log(personbio);
+// console.log(personbio.map(f=>f.name));
+// console.log(personbio.filter(f=>f.gender=="Female"));
+
+
+let personbio=[
+{ name: "kyaw nyein", age:20},
+{ name: "mg nyein", age:23, gender: "m"},
+{ name: "ko nyein", age:28, gender: "M"},
+{ name: "nyein nyein", age:30, gender: "f"}
+]
+
+// let result = personbio.map(function (personbio) {
+// 	if(personbio.gender){
+// 		if(personbio.gender==="m" || personbio.gender==="M"){
+// 			personbio.gender="Male"
+// 		}
+// 		if(personbio.gender==="f"){
+// 			personbio.gender="Female"
+// 		}
+// 		}else{
+// 			personbio.gender="unknown"
+// 		}
+
+	
+// 	return personb(io;
+// })
+
+
+		//with else if function
+
+	// let result= personbio.map(function(person){
+	// 	if(person.gender){
+	// 		if(person.gender==="m" || person.gender==="M"){
+	// 			person.gender="Male"
+	// 		}else if(person.gender==="f"){
+	// 			person.gender="Female"
+	// 		}
+
+	// 	}else{
+	// 		person.name="unknown"
+	// 	}
+	// 	return person;
+	// })
+
+	// switch("blue"){
+	// 	case "black":
+	// 	console.log("my fav color isn't black");
+	// 	break
+	// 	case "brown":
+	// 	console.log("my fav color isn't brown");
+	// 	break
+	// 	case "red":
+	// 	console.log("my fav color isn't red");
+	// 	break
+	// 	default:
+	// 	console.log("Try again")
+	// }
+
+ // let result = personbio.map(function(person){
+ // 	if(person.gender){
+ // 		switch(person.gender){
+ // 			case "m":
+ // 			case "M":
+ // 			person.gender="Male"
+ // 			break
+ // 			case "f":
+ // 			person.gender="Female"
+ // 			break
+ // 			default:
+ // 			person.gender="anonymous"	
+ // 		}
+ // 	}
+ // 	return person;
+ // })
+ // let mybio={
+ // 	name: "Kyaw Nyein",
+ // 	age :20
+ // }
+ // let ans = mybio.age> 29 ? "true" : "false"
+
+ // let obj={
+ // 	name: "Kyaw Nyein",
+ // 	age: 20,
+ // 	city: "Monywa"
+ // }
+ // for(p in obj){
+ // 	// console.log(`${p}`)
+ // 	console.log(`${obj[p]}`)
+
+ 	// console.log(`${p} is ${obj[p]}`)
+ 	 // }
+
+
+
+
+ 	 function add1000(){
+ 	 	let result = 0;
+ 	 	for(i=1;i<1000;i++){
+ 	 		result +=i;
+ 	 	}
+ 	 	return result;
+ 	 }
+
+ 	 // function add1000later(){
+ 	 // 	return new Promise(done=>{
+ 	 // 		done(add1000())
+ 	 // 	})
+		// }
+		//  console.log('some process');
+	 // add1000later().then(result=>	console.log(result))	
+	 //  console.log('more process');
+
+		// function add1000later(){
+		// 	return new Promise((resolve,reject)=>{
+		// 		let result = add1000()
+
+		// 		if(result)resolve(result)
+		// 			else reject()
+		// 	})
+		// }
+		// add1000later()
+		// 	.then(result=> result + 1000)
+		// 	.then(result=>console.log(result + 1000))
+		// 	.catch(()=>console.log("Error"))
+
+		async function add1000later(){
+			let result = await add1000()
+			console.log(result);
+		}
+ 	
+		console.log("some process");
+		add1000later();
+		console.log("more process")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

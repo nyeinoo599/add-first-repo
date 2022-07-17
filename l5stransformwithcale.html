@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Transform with Scale</title>
+</head>
+<style type="text/css">
+	.container{
+		width: 1000px;
+		background: yellow;
+	}
+	.container .move{
+		width: 150px;
+		height: 60px;
+		background: red;
+		color: #fff;
+		font-size: 20px;
+
+		margin: 20px 0;
+
+		text-align: center;
+		line-height: 50px;
+
+
+	}
+	#sclae:hover{
+		          /* scale work (xy) */
+		/*transform: scale(0);*/
+		/*transform: scale(1);  //1 is default*/
+		transform: scale(1.5);
+
+		/*transform: scale(0.5);*/
+	}
+	#sclaexy:hover{
+		          /* scale work (x,y) */
+		/*transform: scale(1,2);
+		transform: scale(2,1);  */
+		transform: scale(2,3);
+	
+	}
+	#sclaex:hover{
+		/*scaleX(x)*/
+
+		/*transform: scale(0.5);*/
+		transform: scaleX(1.5);
+	}
+	#sclaey:hover{
+		/*scaleX(y)*/
+
+		/*transform: scale(0.5);*/
+		transform: scaleY(1.5);
+	}
+
+	img{
+		width: 300px;
+
+		display: block;
+		margin: auto;
+	}
+
+	img:hover{
+		/*transform: scale(2);
+		transform: scale(0.5);
+		transform: scale(2,3);
+		transform: scaleX(2);*/
+		transform: scaleY(1.5);
+	}
+
+
+</style>
+<body>
+	<div class="container">
+		<div id="sclae" class="move">Scale Me</div>
+	</div>
+
+	<div class="container">
+		<div id="sclaexy" class="move">Scale X,Y</div>
+	</div>
+
+	<div class="container">
+		<div id="sclaex" class="move">Scale X</div>
+	</div>
+
+	<div class="container">
+		<div id="sclaey" class="move">Scale Y</div>
+	</div>
+
+
+	<hr/>
+
+	<img src="img/Hydrangeas.jpg" alt="image">
+
+
+
+</body>
+</html>
+
+<!-- 
+scale()
+scale(x,y)
+scaleX(x)
+scaleY(y)
+
+ -->
